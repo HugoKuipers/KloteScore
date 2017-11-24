@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="Vendor/classes.css">
+    <title>Klote Da Zak</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col top-space-50">
+        <div class="card col text-center">
+          <div class="card-body">
+            <h4 class="card-title top-space-25">Voeg score toe:</h4>
+            <form class="form top-space-25 bottom-space-25">
+              <input id="name_input" class="" maxlength="64" minlength="1" type="text"  placeholder="Naam" onfocus="Naam = ''" onblur="this.placeholder = 'Naam'" name="name">
+              <input id="games_input" class="" maxlength="2" minlength="1" type="number"  placeholder="Games" onfocus="Games = ''" onblur="this.placeholder = 'Games'" name="games">
+              <input id="president_input" class="" maxlength="2" minlength="1" type="number"  placeholder="President" onfocus="President = ''" onblur="this.placeholder = 'President'" name="president">
+              <input id="klootzak_input" class="" maxlength="2" minlength="1" type="number"  placeholder="Klootzak" onfocus="Klootzak = ''" onblur="this.placeholder = 'Klootzak'" name="klootzak">
+              <select id="calculator_input" class="input"></select>
+            </form>
+            <button id="add_score" class="btn btn-success col-md-8 bottom-space-50">Score!!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row col top-space-50">
+        <div class="card col">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Naam</th>
+                <th scope="col">Games</th>
+                <th scope="col">President</th>
+                <th scope="col">Klootzak</th>
+                <th scope="col">Score</th>
+                <th scope="col">Calculator</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="Vendor/jquery.min.js"></script>
+    <script src="Vendor/bootstrap.min.js"></script>
+    <script src="Klootzakken.js"></script>
+  </body>
+</html>
